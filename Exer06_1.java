@@ -20,11 +20,11 @@ public class Exer06_1 {
         int ano= inp.nextInt();
 
 
-        if (dia < 1 || dia > 31 ){
+        if ((dia < 1) || (dia > 31)){
             System.out.println("Dia inválido");
 
-        }else if ((dia <= 31) && (ano <=12)){
-            System.out.println("Data valida");
+        }else if (mes >=12) {
+            System.out.println("Data inválida");
 
             if ((dia <= 28) && (mes == 2)) {
                 System.out.println("Data valida");
@@ -32,7 +32,7 @@ public class Exer06_1 {
                 System.out.println("Data inválida");
             }
         }else{
-            System.out.println("Data inválida");
+            System.out.println("Data Valida");
         }
     }
 }
